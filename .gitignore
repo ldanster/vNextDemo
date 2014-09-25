@@ -1,0 +1,9 @@
+.sass-cache
+.tmp
+.suo
+.user
+node_modules
+packages
+application1/bower_components
+application1/bin
+application1/obj
