@@ -5,19 +5,19 @@ namespace ConsoleApp1 {
   public class PhoneBook {
 
     public PhoneBook() {
-      contacts = new List<User>();
+      contacts = new List<Contact>();
     }
 
-    private List<User> contacts;
+    private List<Contact> contacts;
 
     public void AddContact(string name, string surname, string phoneNumber) {
-      contacts.Add(new User() { Name=name, Surname=surname, PhoneNumber=phoneNumber});
+      contacts.Add(new Contact() { Name=name, Surname=surname, PhoneNumber=phoneNumber});
     }
 
     public string DisplayContacts() {
       string names = "";
-      foreach (User user in contacts) {
-        names += user.Name + " " + user.Surname + " - " + user.PhoneNumber +"\n";
+      foreach (Contact contact in contacts) {
+        names += contact.Name + " " + contact.Surname + " - " + contact.PhoneNumber +"\n";
       }
       return names;
     }
